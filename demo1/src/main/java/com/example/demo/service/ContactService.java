@@ -14,6 +14,7 @@ public class ContactService {
 	@Autowired
 	private ContactRepository contactRepository;
 	
+	//get
 	public Optional<Person> retrievePersonById(long id) {
 		return contactRepository.findById(Long.valueOf(id));
 	}
